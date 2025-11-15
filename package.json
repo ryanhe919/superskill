@@ -1,5 +1,5 @@
 {
-  "name": "dev-skill-library",
+  "name": "claude-code-skill-library",
   "version": "1.0.0",
   "description": "A comprehensive skill library for software development in Claude Code",
   "type": "module",
