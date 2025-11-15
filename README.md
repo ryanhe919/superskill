@@ -1,339 +1,349 @@
-# Dev Skill Library
+# Claude Code 开发技能库
 
-A comprehensive skill library for software development in Claude Code. This library provides expert-level skills for code review, testing, refactoring, documentation, deployment, and debugging.
+这是一个为 Claude Code 设计的全面开发技能库，提供代码审查、测试、重构、文档、部署和调试等专业级技能。
 
-## Features
+## 特性
 
-This skill library includes specialized skills for:
+本技能库包含以下专业技能：
 
-- **Code Review**: Security review, performance analysis, and code quality assessment
-- **Testing**: Unit test generation, integration testing, and coverage analysis
-- **Refactoring**: Code refactoring, design patterns, and dependency management
-- **Documentation**: API documentation and code documentation generation
-- **Deployment**: CI/CD pipeline setup and Docker containerization
-- **Debugging**: Bug analysis and error handling implementation
+- **代码审查**：安全审查、性能分析和代码质量评估
+- **测试**：单元测试生成、集成测试和覆盖率分析
+- **重构**：代码重构、设计模式和依赖管理
+- **文档**：API 文档和代码文档生成
+- **部署**：CI/CD 流水线设置和 Docker 容器化
+- **调试**：Bug 分析和错误处理实现
 
-## Skills Overview
+## 技能概览
 
-### Code Review
+### 代码审查
 
-#### Security Review
-Performs comprehensive security code review focusing on:
-- Input validation (SQL injection, XSS, command injection)
-- Authentication & authorization
-- Data protection and encryption
-- OWASP Top 10 vulnerabilities
+#### 安全审查（security-review）
+执行全面的安全代码审查，重点关注：
+- 输入验证（SQL 注入、XSS、命令注入）
+- 认证和授权
+- 数据保护和加密
+- OWASP Top 10 漏洞
 
-Usage in Claude Code:
+使用方法：
 ```
-Use the security-review skill to analyze this codebase for security vulnerabilities
-```
-
-#### Performance Review
-Analyzes code for performance issues:
-- Algorithm efficiency (time/space complexity)
-- Database query optimization
-- Memory management
-- Frontend performance
-- Caching strategies
-
-Usage:
-```
-Use the performance-review skill to identify performance bottlenecks
+使用 security-review 技能分析此代码库的安全漏洞
 ```
 
-#### Code Quality Review
-Ensures code maintainability and best practices:
-- Code structure and organization
-- Naming conventions
-- Code duplication (DRY principle)
-- Error handling
-- Documentation quality
+#### 性能审查（performance-review）
+分析代码性能问题：
+- 算法效率（时间/空间复杂度）
+- 数据库查询优化
+- 内存管理
+- 前端性能
+- 缓存策略
 
-Usage:
+使用方法：
 ```
-Use the code-quality skill to review this code for maintainability
-```
-
-### Testing
-
-#### Unit Test Generator
-Generates comprehensive unit tests with:
-- Complete test coverage (happy path, edge cases, errors)
-- AAA pattern (Arrange, Act, Assert)
-- Mocking external dependencies
-- Parameterized tests
-
-Usage:
-```
-Use the unit-test-generator skill to create tests for this module
+使用 performance-review 技能识别性能瓶颈
 ```
 
-#### Integration Test Generator
-Creates integration tests for:
-- Component interactions
-- API endpoint testing
-- Database operations
-- End-to-end workflows
+#### 代码质量审查（code-quality）
+确保代码可维护性和最佳实践：
+- 代码结构和组织
+- 命名规范
+- 代码重复（DRY 原则）
+- 错误处理
+- 文档质量
 
-Usage:
+使用方法：
 ```
-Use the integration-test-generator skill to test these API endpoints
-```
-
-#### Test Coverage Analyzer
-Analyzes test coverage and identifies gaps:
-- Coverage metrics (line, branch, function)
-- Missing test scenarios
-- Risk assessment
-- Prioritized recommendations
-
-Usage:
-```
-Use the test-coverage-analyzer skill to evaluate our test suite
+使用 code-quality 技能审查此代码的可维护性
 ```
 
-### Refactoring
+### 测试
 
-#### Code Refactoring
-Improves code quality through:
-- Extract method/function
-- Simplify conditionals
-- Remove duplication
-- Optimize performance
-- Address code smells
+#### 单元测试生成器（unit-test-generator）
+生成全面的单元测试：
+- 完整的测试覆盖（正常路径、边界情况、错误）
+- AAA 模式（Arrange, Act, Assert）
+- 模拟外部依赖
+- 参数化测试
 
-Usage:
+使用方法：
 ```
-Use the code-refactor skill to refactor this module
-```
-
-#### Design Patterns
-Identifies and implements design patterns:
-- Creational patterns (Singleton, Factory, Builder)
-- Structural patterns (Adapter, Decorator, Facade)
-- Behavioral patterns (Strategy, Observer, Command)
-
-Usage:
-```
-Use the design-patterns skill to improve the architecture
+使用 unit-test-generator 技能为此模块创建测试
 ```
 
-#### Dependency Cleanup
-Analyzes and optimizes dependencies:
-- Identify unused dependencies
-- Find outdated packages
-- Detect security vulnerabilities
-- Suggest lighter alternatives
+#### 集成测试生成器（integration-test-generator）
+创建集成测试：
+- 组件交互测试
+- API 端点测试
+- 数据库操作测试
+- 端到端工作流测试
 
-Usage:
+使用方法：
 ```
-Use the dependency-cleanup skill to optimize our dependencies
-```
-
-### Documentation
-
-#### API Documentation Generator
-Creates comprehensive API documentation:
-- Endpoint documentation
-- Request/response schemas
-- Authentication details
-- Code examples in multiple languages
-- Error reference
-
-Usage:
-```
-Use the api-docs-generator skill to document our REST API
+使用 integration-test-generator 技能测试这些 API 端点
 ```
 
-#### Code Documentation Generator
-Generates code documentation:
-- Function/method documentation (JSDoc, docstrings, etc.)
-- Class documentation
-- Module documentation
-- Type definitions
-- Usage examples
+#### 测试覆盖率分析器（test-coverage-analyzer）
+分析测试覆盖率并识别缺口：
+- 覆盖率指标（行、分支、函数）
+- 缺失的测试场景
+- 风险评估
+- 优先级建议
 
-Usage:
+使用方法：
 ```
-Use the code-docs-generator skill to document this codebase
+使用 test-coverage-analyzer 技能评估我们的测试套件
 ```
 
-### Deployment
+### 重构
 
-#### CI/CD Pipeline Setup
-Creates CI/CD pipelines for:
+#### 代码重构（code-refactor）
+通过以下方式改进代码质量：
+- 提取方法/函数
+- 简化条件逻辑
+- 消除重复
+- 优化性能
+- 处理代码异味
+
+使用方法：
+```
+使用 code-refactor 技能重构此模块
+```
+
+#### 设计模式（design-patterns）
+识别并实现设计模式：
+- 创建型模式（单例、工厂、建造者）
+- 结构型模式（适配器、装饰器、外观）
+- 行为型模式（策略、观察者、命令）
+
+使用方法：
+```
+使用 design-patterns 技能改进架构
+```
+
+#### 依赖清理（dependency-cleanup）
+分析和优化依赖：
+- 识别未使用的依赖
+- 查找过时的包
+- 检测安全漏洞
+- 建议更轻量的替代方案
+
+使用方法：
+```
+使用 dependency-cleanup 技能优化我们的依赖
+```
+
+### 文档
+
+#### API 文档生成器（api-docs-generator）
+创建全面的 API 文档：
+- 端点文档
+- 请求/响应 Schema
+- 认证详情
+- 多语言代码示例
+- 错误参考
+
+使用方法：
+```
+使用 api-docs-generator 技能为我们的 REST API 编写文档
+```
+
+#### 代码文档生成器（code-docs-generator）
+生成代码文档：
+- 函数/方法文档（JSDoc、docstrings 等）
+- 类文档
+- 模块文档
+- 类型定义
+- 使用示例
+
+使用方法：
+```
+使用 code-docs-generator 技能为此代码库编写文档
+```
+
+### 部署
+
+#### CI/CD 设置（ci-cd-setup）
+创建 CI/CD 流水线：
 - GitHub Actions
 - GitLab CI
 - Jenkins
-- Code quality checks, testing, building, and deployment
+- 代码质量检查、测试、构建和部署
 
-Usage:
+使用方法：
 ```
-Use the ci-cd-setup skill to create a GitHub Actions pipeline
-```
-
-#### Docker Setup
-Containerizes applications with:
-- Multi-stage Dockerfiles
-- Docker Compose configurations
-- Security best practices
-- Image optimization
-- Kubernetes deployment manifests
-
-Usage:
-```
-Use the docker-setup skill to containerize this application
+使用 ci-cd-setup 技能创建 GitHub Actions 流水线
 ```
 
-### Debugging
+#### Docker 设置（docker-setup）
+容器化应用：
+- 多阶段 Dockerfile
+- Docker Compose 配置
+- 安全最佳实践
+- 镜像优化
+- Kubernetes 部署清单
 
-#### Bug Analyzer
-Systematically analyzes and debugs issues:
-- Root cause analysis
-- Step-by-step debugging methodology
-- Common bug patterns
-- Fix recommendations
-- Prevention strategies
-
-Usage:
+使用方法：
 ```
-Use the bug-analyzer skill to debug this error
+使用 docker-setup 技能容器化此应用程序
 ```
 
-#### Error Handler
-Implements robust error handling:
-- Custom error classes
-- Try-catch patterns
-- Global error handlers
-- Input validation
-- Retry logic with backoff
-- Structured logging
+### 调试
 
-Usage:
+#### Bug 分析器（bug-analyzer）
+系统性地分析和调试问题：
+- 根因分析
+- 逐步调试方法
+- 常见 Bug 模式
+- 修复建议
+- 预防策略
+
+使用方法：
 ```
-Use the error-handler skill to implement error handling
+使用 bug-analyzer 技能调试此错误
 ```
 
-## Installation
+#### 错误处理器（error-handler）
+实现健壮的错误处理：
+- 自定义错误类
+- Try-catch 模式
+- 全局错误处理器
+- 输入验证
+- 带退避的重试逻辑
+- 结构化日志
 
-### Option 1: Clone and Link (Recommended for Development)
+使用方法：
+```
+使用 error-handler 技能实现错误处理
+```
+
+## 安装
+
+### 方式 1：克隆并链接（推荐用于开发）
 
 ```bash
-# Clone the repository
+# 克隆仓库
 git clone https://github.com/ryanhe919/superskill.git
 
-# Navigate to Claude Code skills directory
-cd ~/.config/claude-code/skills  # Linux/Mac
-# or
-cd %APPDATA%/claude-code/skills  # Windows
+# 进入 Claude Code 技能目录
+cd ~/.claude/skills  # Linux/Mac
+# 或
+cd %APPDATA%/claude/skills  # Windows
 
-# Create a symlink to the skills
+# 为每个技能创建符号链接
 ln -s /path/to/superskill/skills/* .
 ```
 
-### Option 2: Copy Skills Directly
+### 方式 2：直接复制技能
 
 ```bash
-# Copy skills to Claude Code directory
-cp -r superskill/skills/* ~/.config/claude-code/skills/
+# 复制技能到 Claude Code 目录
+cp -r superskill/skills/* ~/.claude/skills/
 ```
 
-### Option 3: Use as Git Submodule
+### 方式 3：作为 Git 子模块使用
 
 ```bash
-cd ~/.config/claude-code/skills
+cd ~/.claude/skills
 git submodule add https://github.com/ryanhe919/superskill.git
 ```
 
-## Usage in Claude Code
+## 在 Claude Code 中使用
 
-Once installed, skills can be invoked in Claude Code using natural language:
-
-```
-Use the security-review skill to analyze this authentication module
-```
+安装后，可以使用自然语言调用技能：
 
 ```
-Use the unit-test-generator skill to create tests for the UserService class
+使用 security-review 技能分析此认证模块
 ```
 
 ```
-Use the docker-setup skill to containerize this Node.js application
+使用 unit-test-generator 技能为 UserService 类创建测试
 ```
 
-## Skill Categories
+```
+使用 docker-setup 技能容器化此 Node.js 应用程序
+```
+
+## 技能目录结构
 
 ```
 skills/
-├── code-review/
-│   ├── security-review.md
-│   ├── performance-review.md
-│   └── code-quality.md
-├── testing/
-│   ├── unit-test-generator.md
-│   ├── integration-test-generator.md
-│   └── test-coverage-analyzer.md
-├── refactoring/
-│   ├── code-refactor.md
-│   ├── design-patterns.md
-│   └── dependency-cleanup.md
-├── documentation/
-│   ├── api-docs-generator.md
-│   └── code-docs-generator.md
-├── deployment/
-│   ├── ci-cd-setup.md
-│   └── docker-setup.md
-└── debugging/
-    ├── bug-analyzer.md
-    └── error-handler.md
+├── security-review/
+│   └── SKILL.md
+├── performance-review/
+│   └── SKILL.md
+├── code-quality/
+│   └── SKILL.md
+├── unit-test-generator/
+│   └── SKILL.md
+├── integration-test-generator/
+│   └── SKILL.md
+├── test-coverage-analyzer/
+│   └── SKILL.md
+├── code-refactor/
+│   └── SKILL.md
+├── design-patterns/
+│   └── SKILL.md
+├── dependency-cleanup/
+│   └── SKILL.md
+├── api-docs-generator/
+│   └── SKILL.md
+├── code-docs-generator/
+│   └── SKILL.md
+├── ci-cd-setup/
+│   └── SKILL.md
+├── docker-setup/
+│   └── SKILL.md
+├── bug-analyzer/
+│   └── SKILL.md
+└── error-handler/
+    └── SKILL.md
 ```
 
-## Contributing
+## 贡献
 
-Contributions are welcome! To add a new skill:
+欢迎贡献！添加新技能的步骤：
 
-1. Create a new markdown file in the appropriate category directory
-2. Follow the existing skill format:
-   - Clear description of what the skill does
-   - Step-by-step methodology
-   - Code examples
-   - Best practices
-   - Output format guidelines
-3. Test the skill in Claude Code
-4. Submit a pull request
+1. 在适当的目录中创建新的技能目录
+2. 创建 `SKILL.md` 文件，包含：
+   - YAML frontmatter（name 和 description）
+   - 清晰的技能说明
+   - 逐步的方法论
+   - 代码示例
+   - 最佳实践
+   - 输出格式指南
+3. 在 Claude Code 中测试技能
+4. 提交 Pull Request
 
-## Skill Development Guidelines
+## 技能开发指南
 
-Each skill should:
-- Have a clear, focused purpose
-- Provide systematic methodology
-- Include practical examples
-- Follow best practices
-- Be language/framework agnostic when possible
-- Provide actionable output
+每个技能应该：
+- 有明确、专注的目的
+- 提供系统化的方法论
+- 包含实用示例
+- 遵循最佳实践
+- 尽可能与语言/框架无关
+- 提供可操作的输出
 
-## License
+## 许可证
 
 MIT License
 
-## Author
+## 作者
 
-Created for use with Claude Code
+为 Claude Code 创建
 
-## Support
+## 支持
 
-For issues or questions:
-- Open an issue on GitHub
-- Check Claude Code documentation
-- Review existing skills for examples
+如有问题或疑问：
+- 在 GitHub 上提交 Issue
+- 查看 Claude Code 文档
+- 查看现有技能作为示例
 
-## Roadmap
+## 路线图
 
-Planned additions:
-- Database optimization skills
-- Architecture review skills
-- Migration assistance skills
-- Code generation templates
-- Performance profiling skills
-- Infrastructure as Code skills
+计划添加的内容：
+- 数据库优化技能
+- 架构审查技能
+- 迁移辅助技能
+- 代码生成模板
+- 性能分析技能
+- 基础设施即代码技能
