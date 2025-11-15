@@ -1,15 +1,11 @@
 {
   "name": "claude-code-skill-library",
   "version": "1.0.0",
-  "description": "A comprehensive skill library for software development in Claude Code",
+  "description": "Claude Code 的核心技能库：包含 TDD、调试、协作模式以及经过验证的开发技巧",
   "type": "module",
   "keywords": [
     "claude-code",
-    "skills",
-    "development",
-    "code-review",
-    "testing",
-    "refactoring"
+    "skills"
   ],
   "author": "",
   "license": "MIT",

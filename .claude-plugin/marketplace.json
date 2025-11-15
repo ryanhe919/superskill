@@ -1,122 +1,20 @@
 {
-  "name": "开发技能库 (Dev Skill Library)",
-  "description": "为 Claude Code 提供的综合性软件开发技能库，包含代码审查、测试、重构、文档、部署和调试等专家级技能。",
-  "version": "1.0.0",
-  "author": "ryanhe919",
-  "license": "MIT",
-  "homepage": "https://github.com/ryanhe919/superskill",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryanhe919/superskill"
+  "name": "superskills-dev",
+  "description": "Superskills 核心技能库的开发型市场平台",
+  "owner": {
+    "name": "Ryan He",
+    "email": "ryanhe0919@gmail.com"
   },
-  "categories": [
-    "skills"
-  ],
-  "tags": [
-    "code-review",
-    "testing",
-    "refactoring",
-    "documentation",
-    "deployment",
-    "debugging",
-    "development",
-    "security",
-    "performance",
-    "best-practices"
-  ],
-  "skills": [
+  "plugins": [
     {
-      "name": "security-review",
-      "displayName": "安全审查",
-      "description": "执行全面的安全代码审查，识别 SQL 注入、XSS、命令注入等 OWASP Top 10 漏洞",
-      "category": "code-review"
-    },
-    {
-      "name": "performance-review",
-      "displayName": "性能审查",
-      "description": "分析代码性能问题，包括算法效率、数据库优化、内存管理和缓存策略",
-      "category": "code-review"
-    },
-    {
-      "name": "code-quality",
-      "displayName": "代码质量审查",
-      "description": "确保代码可维护性和最佳实践，检查代码结构、命名规范和错误处理",
-      "category": "code-review"
-    },
-    {
-      "name": "unit-test-generator",
-      "displayName": "单元测试生成器",
-      "description": "生成全面的单元测试，包括正常路径、边界情况和错误处理",
-      "category": "testing"
-    },
-    {
-      "name": "integration-test-generator",
-      "displayName": "集成测试生成器",
-      "description": "创建集成测试，涵盖组件交互、API 端点和端到端工作流",
-      "category": "testing"
-    },
-    {
-      "name": "test-coverage-analyzer",
-      "displayName": "测试覆盖率分析器",
-      "description": "分析测试覆盖率并识别缺口，提供优先级建议",
-      "category": "testing"
-    },
-    {
-      "name": "code-refactor",
-      "displayName": "代码重构",
-      "description": "通过提取方法、简化条件语句和消除重复来提高代码质量",
-      "category": "refactoring"
-    },
-    {
-      "name": "design-patterns",
-      "displayName": "设计模式",
-      "description": "识别并实现常见设计模式，改进代码架构",
-      "category": "refactoring"
-    },
-    {
-      "name": "dependency-cleanup",
-      "displayName": "依赖清理",
-      "description": "分析和优化依赖项，识别未使用的包和安全漏洞",
-      "category": "refactoring"
-    },
-    {
-      "name": "api-docs-generator",
-      "displayName": "API 文档生成器",
-      "description": "创建全面的 API 文档，包括端点、请求/响应模式和代码示例",
-      "category": "documentation"
-    },
-    {
-      "name": "code-docs-generator",
-      "displayName": "代码文档生成器",
-      "description": "生成函数、类和模块的详细文档",
-      "category": "documentation"
-    },
-    {
-      "name": "ci-cd-setup",
-      "displayName": "CI/CD 流水线设置",
-      "description": "为 GitHub Actions、GitLab CI 或 Jenkins 创建 CI/CD 流水线",
-      "category": "deployment"
-    },
-    {
-      "name": "docker-setup",
-      "displayName": "Docker 设置",
-      "description": "容器化应用程序，包括 Dockerfile、Docker Compose 和 Kubernetes 配置",
-      "category": "deployment"
-    },
-    {
-      "name": "bug-analyzer",
-      "displayName": "错误分析器",
-      "description": "系统性分析和调试问题，提供根因分析和修复建议",
-      "category": "debugging"
-    },
-    {
-      "name": "error-handler",
-      "displayName": "错误处理器",
-      "description": "实现健壮的错误处理，包括自定义错误类和重试逻辑",
-      "category": "debugging"
+      "name": "superskills",
+      "description": "Claude Code 的核心技能库：包含 TDD、调试、协作模式以及经过验证的开发技巧",
+      "version": "0.0.1",
+      "source": "./",
+      "author": {
+        "name": "Ryan He",
+        "email": "ryanhe0919@gmail.com"
+      }
     }
-  ],
-  "requirements": {
-    "claudeCode": ">=1.0.0"
-  }
+  ]
 }
